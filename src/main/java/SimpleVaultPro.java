@@ -132,7 +132,7 @@ public class SimpleVaultPro extends JavaPlugin implements Listener, CommandExecu
 
         ItemStack tool = p.getInventory().getItemInMainHand();
         boolean silk = tool.containsEnchantment(Enchantment.SILK_TOUCH);
-        int fortune = tool.getEnchantmentLevel(Enchantment.FORTUNE);
+        int fortune = tool.getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS);
 
         Material dropMat = silk ? type : type;
         int amount = 1 + new Random().nextInt(Math.max(1, fortune + 1));
